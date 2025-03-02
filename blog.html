@@ -15,7 +15,60 @@
         }
     </style>
 </head>
-<body>
-    oiii
+<body class="font-poppins bg-[#F4F7FF] p-4">
+    <nav class="max-w-7xl mx-auto bg-white p-4 rounded-2xl shadow-sm">
+        <section class="flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img class="w-10" src="assets/logo.png" alt="">
+                <h2 class="font-poppins text-2xl">Dev<span class="font-bold">Board</span></h2>
+            </div>
+            <button id="back" class="bg-[#3752FD] text-white font-medium rounded-md px-4 py-2 cursor-pointer">Back to Desk</button>
+        </section>
+    </nav>
+    <h2 class="text-center p-4 font-bold text-2xl">Blog</h2>
+    <main class="max-w-7xl mx-auto">
+            <div class="bg-white rounded-lg p-4 text-lg mb-1 font-semibold">
+                Question-1: What are the different ways to select an element in the DOM?
+            </div>
+            <div class="bg-white rounded-lg p-4 text-lg mb-3">
+                <p class="opacity-70">
+                    Some ways of select an elements are - getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), querySelectorAll(). The usage of these depends on the requirement.
+                </p>
+            </div>
+            <div class="bg-white rounded-lg p-4 text-lg mb-1 font-semibold">
+                Question-2: What is the difference between innerHTML, innerText, and textContent ?
+            </div>
+            <div class="bg-white rounded-lg p-4 text-lg mb-3">
+                <p class="opacity-70">
+                    innerHTML will give you all the text with the tags. innerText will give you only text within the tag where you have used. And textContent is broader version of innerText, this will give you all the content including the hidden contents as well.
+                </p>
+            </div>
+            <div class="bg-white rounded-lg p-4 text-lg mb-1 font-semibold">
+                Question-3: What is event delegation in the DOM?
+            </div>
+            <div class="bg-white rounded-lg p-4 text-lg mb-3">
+                <p class="opacity-70">
+                    Event delegation is when you add events to the parent not the child. So that whenever you want to add any child after even after adding the event to the parent, this will work on them.
+                </p>
+            </div>
+            <div class="bg-white rounded-lg p-4 text-lg mb-1 font-semibold">
+                Question-4: What is event bubbling in the DOM?
+            </div>
+            <div class="bg-white rounded-lg p-4 text-lg mb-3">
+                <p class="opacity-70">
+                    Event bubbling is a scenario where the event bubbles all the way up to the dom tree. That means if you click a button, the parent div will also be clicked and the parents all the way to the body will be clicked. Its helpful for writing less code and work even after you add new child.
+                </p>
+            </div>
+            <div class="bg-white rounded-lg p-3 text-lg mb-1 font-semibold">
+                Question-5: How do you create, add, and remove elements using JavaScript?
+            </div>
+            <div class="bg-white rounded-lg p-3 text-lg mb-3">
+                <p class="opacity-70">
+                    You can create element by using createElement("div") or any element you want to created other than div. And then you have to add the elements into its parent element with appendChild. And if you want to remove elements you can use simply remove() after targeting the element by id or you can remove it by using removeChild.
+                </p>
+            </div>
+    </main>
+
+    <script src="script/other.js"></script>
 </body>
 </html>
